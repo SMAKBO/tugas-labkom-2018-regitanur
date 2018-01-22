@@ -1,5 +1,6 @@
 # gimp-assignment-regitanur
 gimp-assignment-regitanur created by GitHub Classroom
+Ethanol
 Nama Anggota
 Regita Nurfadilah Pramesti / 16.62.08490 / regitanur
 Fakhri Musyafa Ihsan / 16.62.08349 / fakhrim
