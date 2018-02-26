@@ -10,6 +10,33 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
+  p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/
+}
+
+
+(max-width:600px) {
+    .column {
+        width: 100%;
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
 </style>
 <body>
 
@@ -33,11 +60,26 @@ h1,h2,h3,h4,h5,h6 {
     <h1 class="w3-xxlarge">Le Catering</h1>
   </div>
 </header>
+<div class="w3-content" style="max-width:1100px">
 <br><br>
-<h1>PRODUCTION</h1>
-  <p>Ethanol is produced both as a petrochemical, through the hydration of ethylene and, via biological processes, by fermenting sugars with yeast.[68] Which process is more economical depends on prevailing prices of petroleum and grain feed stocks. In the 1970s most industrial ethanol in the United States was made as a petrochemical, but in the 1980s the United States introduced subsidies for corn based ethanol and today it is almost all made from that source. 
-  
+<div class="w3-content" style="max-width:1100px">
 
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/170px-Ethanol_Flasche.jpg" class="w3-round w3-image w3-opacity-min"  width="200" height="250">
+    </div>
+
+<h1>PRODUCTION</h1><br><br><br>
+    <div class="w3-col m6 w3-padding-large">
+      
+
+  <p class="w3-large">Ethanol is produced both as a petrochemical, through the hydration of ethylene and, via biological processes, by fermenting sugars with yeast.[68] Which process is more economical depends on prevailing prices of petroleum and grain feed stocks. In the 1970s most industrial ethanol in the United States was made as a petrochemical, but in the 1980s the United States introduced subsidies for corn based ethanol and today it is almost all made from that source. 
+  </p>
+
+
+</div>
+<br><br>
 <h2>Ethylene hydration </h2> 
 <p>Ethanol for use as an industrial feedstock or solvent (sometimes referred to as synthetic ethanol) is made from petrochemical feed stocks, primarily by the acid-catalyzed hydration of ethylene:
 
