@@ -4,66 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
 }
 </style>
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64">Ethalove</h3>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Ethalove</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
   </div>
-  <div class="w3-bar-block">
-    <a href="#index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Ethanol</a> 
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Structure</a> 
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
-    <a href="uses.html" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
-    <a href="Chemistry.html" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
-    <a href="production.html" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white">  Production </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> History </a>
-  </div>
-</nav>
+</div>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Ethalove</span>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/banner.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Ethanol</h1>
+  </div>
 </header>
+<br><br>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<h1>Etymology</h1>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/etimologi.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Ethanol</b></h1>
- <p class="w3-large">
-  Ethanol is the systematic name defined by the International Union of Pure and Applied Chemistry (IUPAC) for a compound consisting of alkyl group with two carbon atoms (prefix “eth-”), having a single bond between them (infix “-an-”), attached functional group −OH group (suffix “-ol”).
-  The “eth-” prefix and the qualifier “ethyl” in “ethyl alcohol” originally come from the name “ethyl” assigned in 1834 to the group C
- 2H
+    
+  
+      <p class="w3-large">Ethanol is the systematic name defined by the International Union of Pure and Applied Chemistry (IUPAC) for a compound consisting of alkyl group with two carbon atoms (prefix “eth-”), having a single bond between them (infix “-an-”), attached functional group −OH group (suffix “-ol”).
+The “eth-” prefix and the qualifier “ethyl” in “ethyl alcohol” originally come from the name “ethyl” assigned in 1834 to the group C
+2H
 5− by Justus Liebig. He coined the word from the German name Aether of the compound C
 2H
 5−O−C
@@ -76,55 +59,15 @@ The name ethanol was coined as a result of a resolution that was adopted at the 
 <p class="w3-large">The term “alcohol” now refers to a wider class of substances in chemistry nomenclature, but in common parlance it remains the name of ethanol. The Oxford English Dictionary claims that it is a medieval loan from Arabic al-kuḥl, a powdered ore of antimony used since antiquity as a cosmetic, and retained that meaning in Middle Latin. The use of “alcohol” for ethanol (in full, “alcohol of wine”) is modern, first recorded 1753, and by the later 17th century referred to “any sublimated substance; distilled spirit” use for “the spirit of wine” (shortened from a full expression alcohol of wine). The systematic use in chemistry dates to 1850.
  </p>
 
-
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want to know about ethannol? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
-
+  
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Regita</a></p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a>Regita</a></p>
+</footer>
 
 </body>
 </html>
+
