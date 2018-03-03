@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html>
-<title>HISTORY</title>
+<title>Ethanol</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Playfair Display";
-    letter-spacing: 5px;
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 </style>
 <body>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
     <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="about.html" class="w3-bar-item w3-button">About Ethalove</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="img/bhistory.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
 
-<!-- Page content -->
-<h1>HISTORY</h1>
-  <p> The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. The intoxicating effects of ethanol consumption have been known since ancient times. Ethanol has been used by humans since prehistory as the intoxicating ingredient of alcoholic beverages. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages.
+<br><br>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><a style="font-size:40px">Ethalove</a></a>
+  <div class="w3-container">
+    <img herf="index.html"  src="img/logo2.png" style="width: 100px; height: 100px">
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Ethanol</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Structure</a> 
+    <a href="etymology.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
+     <a href="history.html" class="w3-bar-item w3-button w3-hover-white"> History </a>
+    <a href="uses.html" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
+    <a href="chemistry.html" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
+    <a href="natural_occurrence" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
+    <a href="production.html" class="w3-bar-item w3-button w3-hover-white">  Production </a>
+    <a href="purification.html" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
+    <a href="reaction.html" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
+   
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="img/buses.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h1 class="w3-xxlarge">Ethalove</h1>
+    </div>
+  </header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+   
+ <h1 class="w3-jumbo"><b>Ethanol</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Uses.</b></h1>
+
+<hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+     <p> The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. The intoxicating effects of ethanol consumption have been known since ancient times. Ethanol has been used by humans since prehistory as the intoxicating ingredient of alcoholic beverages. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages.
 
 The medieval Muslims used the distillation process extensively, and applied it to the distillation of alcohol. The Arab chemist Al-Kindi unambiguously described the distillation of wine in the 9th century.The process later spread from the Middle East to Italy.Production of alcohol from distilled wine was later recorded by the School of Salerno alchemists in the 12th century. Mention of absolute alcohol, in contrast with alcohol-water mixtures, was later made by Raymond Lull in the 14th century.
 
@@ -49,13 +96,68 @@ Ethanol was first prepared synthetically in 1825 by Michael Faraday. He found th
 Ethanol was used as lamp fuel in the United States as early as 1840, but a tax levied on industrial alcohol during the Civil War made this use uneconomical. The tax was repealed in 1906.Use as an automotive fuel dates back to 1908, with the Ford Model T able to run on petrol (gasoline) or ethanol.It fuels some spirit lamps.
 
 Ethanol intended for industrial use is often produced from ethylene.Ethanol has widespread use as a solvent of substances intended for human contact or consumption, including scents, flavorings, colorings, and medicines. In chemistry, it is both a solvent and a feedstock for the synthesis of other products. It has a long history as a fuel for heat and light, and more recently as a fuel for internal combustion engines.</p>
+
+      
+   <!-- references -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>References.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+   <a href="https://en.wikipedia.org/wiki/Ethanol">https://en.wikipedia.org/wiki/Ethanol</a>
+  </div>
+  
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want to know about ethanol? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
 <!-- End page content -->
 </div>
 
+<!-- W3.CSS Container -->
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-red w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Delia</a></p>
 </footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
