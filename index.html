@@ -24,24 +24,39 @@ body {font-size:16px;}
 }
 </style>
 <body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">About Ethalove</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 
+
+<br><br>
+<img src="img/banner.jpg" style=" width: 1050px;margin-left:300px;margin-right:10px">
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><a style="font-size:40px">Ethalove</a></a>
   <div class="w3-container">
-    <h3 class="w3-padding-64">Ethalove</h3>
+    <img src="img/logo2.png" style="width: 150px; height: 150px">
   </div>
   <div class="w3-bar-block">
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Ethanol</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Structure</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white">  Production </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
-    <a href="#" class="w3-bar-item w3-button w3-hover-white"> History </a>
+    <a href="etymology.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
+     <a href="history.html" class="w3-bar-item w3-button w3-hover-white"> History </a>
+    <a href="uses.html" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
+    <a href="chemistry.html" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
+    <a href="natural_occurrence" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
+    <a href="production.html" class="w3-bar-item w3-button w3-hover-white">  Production </a>
+    <a href="purification.html" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
+    <a href="reaction.html" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
+   
   </div>
 </nav>
 
@@ -86,6 +101,7 @@ body {font-size:16px;}
 
    <h4>2D structure</h4>
    <img src="img/2.jpg" width="400" height="400">
+ 
   </div>
   
   <!-- Services -->
@@ -106,6 +122,17 @@ body {font-size:16px;}
       Ethanol is the systematic name defined by the International Union of Pure and Applied Chemistry (IUPAC) for a compound consisting of alkyl group with two carbon atoms (prefix “eth-”), having a single bond between them (infix “-an-”), attached functional group −OH group (suffix “-ol”). The “eth-” prefix and the qualifier “ethyl” in “ethyl alcohol” originally come from the name “ethyl” assigned in 1834 to the group C 2H 5− by Justus Liebig. He coined the word from the German name Aether of the compound C 2H 5−O−C 2H 5 (commonly called “ether” in English, more specifically called “diethyl ether”).</p>
    <button class="button"><a href="etymology.html"> Read more </a></button>
   </div>
+
+  <!-- History -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+   <p>
+      The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. The intoxicating effects of ethanol consumption have been known since ancient times. Ethanol has been used by humans since prehistory as the intoxicating ingredient of alcoholic beverages. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages. The medieval Muslims used the distillation process extensively, and applied it to the distillation of alcohol. The Arab chemist Al-Kindi unambiguously described the distillation of wine in the 9th century.</p>
+   <button class="button"><a href="history.html"> Read more </a></button>
+  </div>
+
    <!-- Uses -->
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Uses.</b></h1>
@@ -113,7 +140,7 @@ body {font-size:16px;}
    
    <p>
       Ethanol is used in medical wipes and most common antibacterial hand sanitizer gels as an antiseptic. Ethanol kills organisms by denaturing their proteins and dissolving their lipids and is effective against most bacteria and fungi, and many viruses. However, ethanol is ineffective against bacterial spores. 70% ethanol is the most effective concentration, particularly because of osmotic pressure. Absolute ethanol may inactivate microbes without destroying them because the alcohol is unable to fully permeate the microbe's membrane.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="uses.html"> Read more </a></button>
   </div>
 
   
@@ -124,7 +151,7 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid red" class="w3-round">
    
    <p>Ethanol is a 2-carbon alcohol. Its molecular formula is CH3CH2OH. An alternative notation is CH3−CH2−OH, which indicates that the carbon of a methyl group (CH3−) is attached to the carbon of a methylene group (−CH2–), which is attached to the oxygen of a hydroxyl group (−OH). It is a constitutional isomer of dimethyl ether. Ethanol is sometimes abbreviated as EtOH, using the common organic chemistry notation of representing the ethyl group (C2H5−) with Et.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="chemistry.html"> Read more </a></button>
   </div>
   
   <!-- Natural Occurrence -->
@@ -134,17 +161,17 @@ body {font-size:16px;}
    
    <p>
       Ethanol is a byproduct of the metabolic process of yeast. As such, ethanol will be present in any yeast habitat. Ethanol can commonly be found in overripe fruit. Ethanol produced by symbiotic yeast can be found in bertam palm blossoms. Although some animal species such as the pentailed treeshrew exhibit ethanol-seeking behaviors, most show no interest or avoidance of food sources containing ethanol. Ethanol is also produced during the germination of many plants as a result of natural anerobiosis. Ethanol has been detected in outer space, forming an icy coating around dust grains in interstellar clouds. Minute quantity amounts (average 196 ppb) of endogenous ethanol and acetaldehyde were found in the exhaled breath of healthy volunteers. Auto-brewery syndrome, also known as gut fermentation syndrome, is a rare medical condition in which intoxicating quantities of ethanol are produced through endogenous fermentation within the digestive system</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="natural_occurrence.html"> Read more </a></button>
   </div>
   
   <!-- Production -->
-  <div class="w3-container" id="services" style="margin-top:75px">
+  <div class="w3-container" id="poduction" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Production.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
    
    <p>
       Ethanol is produced both as a petrochemical, through the hydration of ethylene and, via biological processes, by fermenting sugars with yeast.[68] Which process is more economical depends on prevailing prices of petroleum and grain feed stocks. In the 1970s most industrial ethanol in the United States was made as a petrochemical, but in the 1980s the United States introduced subsidies for corn based ethanol and today it is almost all made from that source.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="production.html"> Read more </a></button>
   </div>
   
 
@@ -154,7 +181,7 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid red" class="w3-round">
    
    <p>Ethylene hydration or brewing produces an ethanol–water mixture. For most industrial and fuel uses, the ethanol must be purified. Fractional distillation at atmospheric pressure can concentrate ethanol to 95.6% by weight (89.5 mole%). This mixture is an azeotrope with a boiling point of 78.1 °C (172.6 °F), and cannot be further purified by distillation. Addition of an entraining agent, such as benzene, cyclohexane, or heptane, allows a new ternary azeotrope comprising the ethanol, water, and the entraining agent to be formed. This lower-boiling ternary azeotrope is removed preferentially, leading to water-free ethanol. At pressures less than atmospheric pressure, the composition of the ethanol-water azeotrope shifts to more ethanol-rich mixtures, and at pressures less than 70 torr (9.333 kPa), there is no azeotrope, and it is possible to distill absolute ethanol from an ethanol-water mixture. While vacuum distillation of ethanol is not presently economical, pressure-swing distillation is a topic of current research. In this technique, a reduced-pressure distillation first yields an ethanol-water mixture of more than 95.6% ethanol. Then, fractional distillation of this mixture at atmospheric pressure distills off the 95.6% azeotrope, leaving anhydrous ethanol at the bottom.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="purification.html"> Read more </a></button>
   </div>
   
   <!-- Reactions -->
@@ -164,18 +191,10 @@ body {font-size:16px;}
    
    <p>
       Ethanol is classified as a primary alcohol, meaning that the carbon its hydroxyl group attaches to has at least two hydrogen atoms attached to it as well. Many ethanol reactions occur at its hydroxyl group.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
+   <button class="button"><a href="reaction.html"> Read more </a></button>
   </div>
   
-  <!-- History -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>History.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-   
-   <p>
-      The fermentation of sugar into ethanol is one of the earliest biotechnologies employed by humans. The intoxicating effects of ethanol consumption have been known since ancient times. Ethanol has been used by humans since prehistory as the intoxicating ingredient of alcoholic beverages. Dried residue on 9,000-year-old pottery found in China suggests that Neolithic people consumed alcoholic beverages. The medieval Muslims used the distillation process extensively, and applied it to the distillation of alcohol. The Arab chemist Al-Kindi unambiguously described the distillation of wine in the 9th century.</p>
-   <button class="button"><a href="http://www.mcdonalds.co.id/"> Read more </a></button>
-  </div>
+  
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
@@ -203,7 +222,10 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Regita</a></p></div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Regita</a></p>
+</footer>
 
 <script>
 // Script to open and close sidebar
