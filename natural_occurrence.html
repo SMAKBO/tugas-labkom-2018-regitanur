@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Ethanol</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Playfair Display";
-    letter-spacing: 5px;
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 </style>
 <body>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Ethanol</a>
+  <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
+    
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="about.html" class="w3-bar-item w3-button">About Ethalove</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 </div>
 
-<!-- Header -->
-    <br><br><br>
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="img/bno.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Ethalove</h1>
+
+<br><br>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px"><a style="font-size:40px">Ethalove</a></a>
+  <div class="w3-container">
+    <img src="img/logo2.png" style="width: 150px; height: 150px">
   </div>
-</header>
+  <div class="w3-bar-block">
+    <a href="#index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Ethanol</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Structure</a> 
+    <a href="etymology.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
+     <a href="history.html" class="w3-bar-item w3-button w3-hover-white"> History </a>
+    <a href="uses.html" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
+    <a href="chemistry.html" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
+    <a href="natural_occurrence" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
+    <a href="production.html" class="w3-bar-item w3-button w3-hover-white">  Production </a>
+    <a href="purification.html" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
+    <a href="reaction.html" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
+   
+  </div>
+</nav>
+<!-- Top menu on small screens -->
+<img src="img/bno.jpg" style=" width: 1050px;margin-left:300px;margin-right:10px">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
 
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="img/01.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Ethanol</h1><br>
-      <h5 class="w3-center">Natural Occurence</h5>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+   
+ <h1 class="w3-jumbo"><b>Ethanol</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Natural Occurence.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
       <p class="w3-large">Ethanol is a byproduct of the metabolic process of yeast. As such, ethanol will be present in any yeast habitat. Ethanol can commonly be found in overripe fruit. Ethanol produced by symbiotic yeast can be found in bertam palm blossoms. Although some animal species such as the pentailed treeshrew exhibit ethanol-seeking behaviors, most show no interest or avoidance of food sources containing ethanol. Ethanol is also produced during the germination of many plants as a result of natural anerobiosis. Ethanol has been detected in outer space, forming an icy coating around dust grains in interstellar clouds. Minute quantity amounts (average 196 ppb) of endogenous ethanol and acetaldehyde were found in the exhaled breath of healthy volunteers. Auto-brewery syndrome, also known as gut fermentation syndrome, is a rare medical condition in which intoxicating quantities of ethanol are produced through endogenous fermentation within the digestive system</p>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-64" id="menu">
-    <div class="w3-col l6 w3-padding-large">
+
       <h1 class="w3-center">Fuel</h1><br>
       <h4>Engine fuel</h4>
       <p class="w3-text-grey">is ethyl alcohol, the same type of alcohol found in alcoholic beverages, used as fuel. It is most often used as a motor fuel, mainly as a biofuel additive for gasoline. The first production car running entirely on ethanol was the Fiat 147, introduced in 1978 in Brazil by Fiat. Ethanol is commonly made from biomass such as corn or sugarcane. World ethanol production for transport fuel tripled between 2000 and 2007 from 17×109 liters (4.5×109 U.S. gal; 3.7×109 imp gal) to more than 52×109 liters (1.4×1010 U.S. gal; 1.1×1010 imp gal). From 2007 to 2008, the share of ethanol in global gasoline type fuel use increased from 3.7% to 5.4%.[1] In 2011 worldwide ethanol fuel production reached 8.46×1010 liters (2.23×1010 U.S. gal; 1.86×1010 imp gal) with the United States of America and Brazil being the top producers, accounting for 62.2% and 25% of global production, respectively.[2] US ethanol production reached 57.54×109 liters (1.520×1010 U.S. gal; 1.266×1010 imp gal) in 2017-04.</p><br>
@@ -65,27 +87,65 @@ h1,h2,h3,h4,h5,h6 {
     
       <h4>Fuel cells</h4>
       <p class="w3-text-grey">Commercial fuel cells operate on reformed natural gas, hydrogen or methanol. Ethanol is an attractive alternative due to its wide availability, low cost, high purity and low toxicity. There are a wide range of fuel cell concepts that have been trialled including direct-ethanol fuel cells, auto-thermal reforming systems and thermally integrated systems. The majority of work is being conducted at a research level although there are a number of organizations at the beginning of commercialization of ethanol fuel cells.</p><br>
-    
-    <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-    </div>
+  
+      
+  
+      <!-- references -->
+      <div class="w3-container" id="services" style="margin-top:75px">
+     <h1 class="w3-xxxlarge w3-text-red"><b>References.</b></h1>
+       <hr style="width:50px;border:5px solid red" class="w3-round">
+       <a href="https://en.wikipedia.org/wiki/Ethanol">https://en.wikipedia.org/wiki/Ethanol</a>
+        </div>
+  
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want to know about ethanol? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
   </div>
 
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>Id line :peelazi</p>
-    <p>Instagram:xpeelazix</p>
-    <p>You can also contact us by phone 089615999648 or email regitanur@smakbo.com</p>
-<!-- End page content -->
-</div>
-
+<!-- W3.CSS Container -->
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Feri Sandrian</a></p>
+<footer class="w3-center w3-red w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Feri</a></p>
 </footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
