@@ -16,5 +16,5 @@ body {font-size:16px;}
 
 
 }
-<a img  {width: 1050px;margin-left:300px;margin-right:10px} 
-<b img { class="w3-round w3-image w3-opacity-min"  width="200" height="250"}
+a img  {width: 100%; height:auto;} 
+b img { class="w3-round w3-image w3-opacity-min"  width="200" height="250"}
