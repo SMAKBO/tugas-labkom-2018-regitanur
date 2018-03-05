@@ -20,7 +20,8 @@ body {font-size:16px;}
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;}
+    cursor: pointer;
+}
 </style>
 <body>
 <!-- Navbar (sit on top) -->
@@ -105,6 +106,8 @@ body {font-size:16px;}
 
 <h1 style="font-size:200%;font-family:arial;background-color:lavender">Oxidation</h1>
     <h2>Ethanol can be oxidized to acetaldehyde and further oxidized to acetic acid, depending on the reagents and conditions.[76] This oxidation is of no importance industrially, but in the human body, these oxidation reactions are catalyzed by the enzyme liver alcohol dehydrogenase. The oxidation product of ethanol, acetic acid, is a nutrient for humans, being a precursor to acetyl CoA, where the acetyl group can be spent as energy or used for biosynthesis.</h2>
+
+    <img src="img/oxidation.png"class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="300">
       
   
       <!-- references -->
@@ -117,7 +120,7 @@ body {font-size:16px;}
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
- <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Do you want to know about ethanol? Fill out the form and fill me in with the details :) We love meeting new people!</p>
     <form action="/action_page.php" target="_blank">
@@ -147,19 +150,22 @@ body {font-size:16px;}
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";}
+    document.getElementById("myOverlay").style.display = "block";
+}
  
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";}
+    document.getElementById("myOverlay").style.display = "none";
+}
 
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;}
+  captionText.innerHTML = element.alt;
+}
 </script>
 
-</body> 
+</body>
 </html>
