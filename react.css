@@ -1,156 +1,113 @@
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 <!DOCTYPE html>
+2
 <html>
+3
 <title>Ethanol</title>
+4
 <meta charset="UTF-8">
+5
 <meta name="viewport" content="width=device-width, initial-scale=1">
+6
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+7
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+8
 <link rel="stylesheet" type="text/css" href="css/react.css">
-
+9
+​
+10
 </style>
+11
 <body>
+12
 <!-- Navbar (sit on top) -->
+13
 <div class="w3-top">
+14
   <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
+15
     
+16
     <!-- Right-sided navbar links. Hide them on small screens -->
+17
     <div class="w3-right w3-hide-small">
+18
       <a href="about.html" class="w3-bar-item w3-button">About Ethalove</a>
+19
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+20
     </div>
+21
   </div>
+22
 </div>
-
-
+23
+​
+24
+​
+25
 <br><br>
+26
 <!-- Sidebar/menu -->
+27
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+28
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:32px"><a style="font-size:40px">Ethalove</a></a>
+29
   <div class="w3-container">
+30
     <img src="img/logo2.png" style="width: 100px; height: 100px">
+31
   </div>
+32
   <div class="w3-bar-block">
+33
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Ethanol</a> 
+34
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Structure</a> 
+35
     <a href="etymology.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Etymology </a> 
+36
      <a href="history.html" class="w3-bar-item w3-button w3-hover-white"> History </a>
+37
     <a href="uses.html" class="w3-bar-item w3-button w3-hover-white"> Uses </a>
+38
     <a href="chemistry.html" class="w3-bar-item w3-button w3-hover-white"> Chemistry </a> 
+39
     <a href="natural_occurrence" class="w3-bar-item w3-button w3-hover-white"> Natural <br>occurrence</a>
+40
     <a href="production.html" class="w3-bar-item w3-button w3-hover-white">  Production </a>
+41
     <a href="purification.html" class="w3-bar-item w3-button w3-hover-white"> Purification </a>
+42
     <a href="reaction.html" class="w3-bar-item w3-button w3-hover-white">  Reactions </a>
+43
    
+44
   </div>
+45
 </nav>
+46
 <!-- banner-->
+47
 <img src="img/breac.jpg" style="width: 100%;height:auto">
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-   
- <h1 class="w3-jumbo"><b>Ethanol</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Reactions.</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  <h2>Ethanol is classified as a primary alcohol, meaning that the carbon its hydroxyl group attaches to has at least two hydrogen atoms attached to it as well. Many ethanol reactions occur at its hydroxyl group.</h2>
-
-<br><h1 style="font-size:200%;font-family:arial;background-color:lavender;">Dehydration</h1>
-  <h2 style="font-size:200%;border:5px solid Violet;">
-    2 CH3CH2OH → CH3CH2OCH2CH3 + H2O (ca. 120 °C)
-       CH3CH2OH → H2C=CH2 + H2O (above 160 °C) </h2>
-
-<br><h1 style="font-size:200%;font-family:arial;background-color:lavender">Combustion</h1>
-     <h2 style="border:5px solid Violet;">
-
-    C2H5OH (l) + 3 O2 (g) → 2 CO2 (g) + 3 H2O (l); −ΔHc = 1371 kJ/mol[92] = 29.8 kJ/g = 327 kcal/mol = 7.1 kcal/g
-
-    C2H5OH (l) + 3 O2 (g) → 2 CO2 (g) + 3 H2O (g); −ΔHc = 1236 kJ/mol = 26.8 kJ/g = 295.4 kcal/mol = 6.41 kcal/g[93]
-
-   Specific heat = 2.44 kJ/(kg·K)</h2>
-<br><h1 style="font-size:200%;font-family:arial;background-color:lavender">Acid-base chemistry</h1>
-  <h2 style="font-size:150%;border:5px solid Violet;">  By reaction with an alkali metal such as sodium
-   <br> 2 CH3CH2OH + 2 Na → 2CH3CH2ONa + H2
-
-
-   <br>  CH3CH2OH + NaOH ⇌ CH3CH2ONa + H2O </h2>
-<br><h1 style="font-size:200%;font-family:arial;background-color:lavender">Halogenation</h1>
-    <h2 style="font-size:150%;border:5px solid Violet;">
-
-    CH3CH2OH + HCl → CH3CH2Cl + H2O
-    <br> CH3CH2OH + SOCl2 → CH3CH2Cl + SO2 + HCl
-    <br> 4Cl2 + CH3CH2OH → CCl3CHO + 5 HCl
-    <br> CCl3CHO + H2O → CCl3C(OH)2</h2>
-
-<br><h1 style="font-size:200%;font-family:arial;background-color:lavender">Oxidation</h1>
-    <h2>Ethanol can be oxidized to acetaldehyde and further oxidized to acetic acid, depending on the reagents and conditions.[76] This oxidation is of no importance industrially, but in the human body, these oxidation reactions are catalyzed by the enzyme liver alcohol dehydrogenase. The oxidation product of ethanol, acetic acid, is a nutrient for humans, being a precursor to acetyl CoA, where the acetyl group can be spent as energy or used for biosynthesis.</h2>
-
-    <img src="img/oxidation.png"class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="300">
-      
-  
-      <!-- references -->
-      <div class="w3-container" id="services" style="margin-top:75px">
-     <h1 class="w3-xxxlarge w3-text-red"><b>References.</b></h1>
-       <hr style="width:50px;border:5px solid red" class="w3-round">
-       <a href="https://en.wikipedia.org/wiki/Ethanol">https://en.wikipedia.org/wiki/Ethanol</a>
-        </div>
-  
-
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want to know about ethanol? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
-
-<!-- W3.CSS Container -->
-<!-- Footer -->
-<footer class="w3-center w3-red w3-padding-32">
-  <p>Powered by <a href="https://github.com/cippaa" title="cippaa" target="_blank" class="w3-hover-text-green">Syifa</a></p>
-</footer>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
-</body>
-</html>
+48
+​
+49
