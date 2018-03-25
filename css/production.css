@@ -17,7 +17,6 @@ body {font-size:16px;}
 }
 a img  {width: 100%; height:auto;} 
 b img { class="w3-round w3-image w3-opacity-min"  width="200" height="250"}
-a p {text-align: center;}
 ul.a {
     list-style-type: square;
 }
