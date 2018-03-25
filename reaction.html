@@ -12,7 +12,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-red w3-padding w3-card" style="letter-spacing:4px;">
-    
+    <a href="#home" class="w3-bar-item w3-button">Ethaove</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="about.html" class="w3-bar-item w3-button">About Ethalove</a>
@@ -21,8 +21,10 @@
   </div>
 </div>
 
+
    
 <br><br>
+ <img src="img/breac.jpg" style="width: 100%;height:auto">
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:32px"><a style="font-size:40px">Ethalove</a></a>
@@ -43,9 +45,12 @@
    
   </div>
 </nav>
-<!-- banner-->
-<img src="img/breac.jpg" style="width: 100%;height:auto">
 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ethalove</span>
+</header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
